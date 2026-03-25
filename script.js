@@ -13,7 +13,9 @@ function addTarea() {
             <li>
                 <div>
                     <input type="checkbox">
-                    <p>${task.value}</p>
+                    <span>${task.value}</span>
+                    <button class="action-task edit">Edit</button>
+                    <button class="action-task delete">Delete</button>
                 </div>
             </li>
         `;
