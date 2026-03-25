@@ -6,11 +6,17 @@ function addTarea() {
     const task = document.getElementById("inp-task");
 
     const din = document.getElementById("tasks");
-    const html = ``;
 
     if (task.value !== "") {
         
-        html = `<li>${tarea}</li>`;
+        const html = `
+            <li>
+                <div>
+                    <input type="checkbox">
+                    <p>${task.value}</p>
+                </div>
+            </li>
+        `;
         din.innerHTML += html;
         
         let todolist = JSON.parse(localStorage.getItem("tasks")) || [];
